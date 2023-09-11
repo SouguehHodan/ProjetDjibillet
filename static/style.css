@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+#navbarNav{
+    justify-content: end;
+}
+#A1,#A2,#A3{
+    height: 65vh;
+    background: #494545;
+    position: relative;
+}
+.carousel-inner img{
+    background-position: center;
+    background-size: cover;
+}
+#A1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)),url(img/tof.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#A2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)),url(img/tof2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#A3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)),url(img/tof3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.part-21 #rech{
+    height: 15%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#rech input{
+    border: none;
+    background: none;
+}
+#rech input:hover{
+    border: none;
+}
+.part-2 .carousel-inner{
+    margin: 0 20px;
+}
+.part-3 .carousel-inner{
+    margin: 0 20px;
+}
+.part-2_1 .carousel-inner{
+    margin: 0 20px;
+}
+.part-4-1 .carousel-inner{
+    margin: 0 20px;
+}
+.cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.part-4{
+    background-color: rgba(54, 36, 36, 0.2);
+    width: 100%;
+    height: 55vh;
+    margin-top: 8%;
+    padding-top: 6%;
+}
+.part-4 p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.contner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.par1{
+    height: 25%;
+    width: 50vh;
+    margin: 5% 0;
+    color: black;
+    text-align: center;
+    /* background-color: rgba(32, 133, 41, 0.3); */
+    border-radius: 20px;
+}
+.part-5{
+    background: -webkit-linear-gradient(left, #3aa73a, #7bb694);
+    width: 100%;
+    height: 50vh;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    padding-top: 6%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.part-5 .chld1 h5{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.part-5 .chld1 p{
+    text-align: center;
+    font-size: 16px;
+}
+.part-5 .chld2 p{
+    text-align: center;
+    font-size: 16px;
+    margin-left: 2%;
+}
+.part-5 .chld2 h5{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.eve-1 img{
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.eve-1 p{
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+.eve-2{
+    padding-top: 8%;
+    margin: 0 8%;
+}
+.even-11 h4{
+    color: green;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.even-2 h4{
+    color: green;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.even-3 h4{
+    color: green;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.even-4 h4{
+    color: green;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.even-5 h4{
+    color: green;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.even-6 h4{
+    color: green;
+    font-weight: bold;
+    margin: 4% 0;
+}
+.even-1{
+    display: flex;
+    flex-direction: row;
+}
+.pc-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.pc-1 h2{
+   position: absolute;
+   left: 40%;
+}
+.pc-1 form{
+    height: 70vh;
+    width: 26%;
+    margin-right: 8%;
+    margin-top: 5%;
+    text-align: center;
+    background:linear-gradient(45deg,#a8afaa,#036d0c);
+    border-radius: 20px;
+}
+.pc-1 h3{
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-size: 5vh;
+    color: white;
+}
+.pc-1 input{
+    padding: 0.4rem;
+}
+.pc-1 input.A{
+    width: 80%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-1 input.B{
+    width: 80%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-1 input.D{
+    width: 60%;
+    height: 45px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-1 input.D:hover{
+    background-color: rgb(11, 102, 30);
+    color: black;
+}
+.pc-1 a{
+    text-decoration: none;
+}
+
+.pc-2{
+    background: none;
+    margin-top: 8%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pc-2 h2{
+    position: absolute;
+    top: 10%;
+}
+.pc-2 form{
+    margin-top: 2%;
+    height: 95vh;
+    width: 35%;
+    text-align: center;
+    background:linear-gradient(45deg,#a8afaa,#036d0c);
+    border-radius: 20px;
+}
+.pc-2 h3{
+    margin-top: 60px;
+    margin-bottom: 10%;
+    font-size: 5vh;
+    color: black;
+}
+.pc-2 p{
+    position: absolute;
+    left: 36%;
+}
+span{
+    color: red;
+}
+.pc-2 input{
+    padding: 0.5rem;
+}
+.pc-2 .A{
+    width: 80%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-2 .B{
+    width: 80%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-2 .C{
+    width: 80%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-2 .D{
+    width: 80%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-2 .E{
+    width: 80%;
+    height: 25px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-2 .tot{
+    width: 60%;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.5);
+}
+.pc-2 .tot:hover{
+    background-color: green;
+}
+#imgcs{
+    width: 100%;
+    height: 80vh;
+}
+
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(125, 47%, 10%) 15%,
+        hsl(120, 54%, 9%) 35%,
+        hsl(130, 28%, 13%) 75%,
+        hsl(131, 19%, 23%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+      hsl(125, 47%, 10%) 15%,
+         hsl(120, 54%, 9%) 35%,
+        hsl(130, 28%, 13%) 75%,
+        hsl(131, 19%, 23%) 80%,
+        transparent 100%);
+  }
+
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#006b39, #1fff32);
+    overflow: hidden;
+  }
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#006b39, #1fff32);
+    overflow: hidden;
+  }
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+
+  .invalid-feedback{
+    color: red;
+  }
+
+
+  .gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+
+#paie,#pani{
+    padding-top: 15%;
+}
+
+
+#navbar{
+    text-align: center;
+    margin-left: auto;
+}
+
+
+#gradient-custom {
+    background: -webkit-linear-gradient(left, #129c12, #31af65);
+    height: 80vh;
+    margin-top:10% ;
+    margin-bottom: 10%;
+    }
+    
+    #card-custom {
+    border-bottom-left-radius: 10% 50%;
+    border-top-left-radius: 10% 50%;
+    background-color: #f8f9fa ;
+    }
+
+    .input-custom {
+    background-color: white ;
+    }
+    
+    .white-text {
+    color: hsl(52, 0%, 98%);
+    font-weight: 100 ;
+    font-size: 14px;
+    }
+    
+    .back-button {
+    background-color: hsl(52, 0%, 98%);
+    font-weight: 700;
+    color: black ;
+    margin-top: 50px ;
+    }
+    @media screen and (max-width: 500px) {
+        .carousel-inner .card{
+            width: 100%;
+        }
+        .part-5{
+            flex-direction: column;
+        }
+        .part-5 .chld1 h5{
+            font-size: 20px;
+        }
+        .part-5 .chld1 p{
+            font-size: 12px;
+        }
+        .part-5 .chld2 h5{
+            font-size: 20px;
+        }
+        .part-5 .chld2 p{
+            font-size: 12px;
+        }
+        .contner .par1 a{
+           font-size: 14px;
+        }
+        .eve-1 p{
+            font-size: 10px;
+        }
+        .even-11{
+            flex-direction: column;
+        }
+        .cosp_1 p{
+            font-size: 11px;
+        }
+    }

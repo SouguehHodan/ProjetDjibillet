@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{%block content%}
+    <!-- partie principale
+    <main> -->
+      <section class="vh-100" style="background-color: #619e5c;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+              <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-6 col-lg-5 d-none d-md-block">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                      alt="login form" class="img-fluid" style="border-radius: 0.9rem 0 0 0.9rem;" />
+                  </div>
+                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5 text-black">
+                        
+                        <h2 class="text-success">Tableaux de bord</h2>
+                        {% for users in User: %}
+                     
+                        <p><b>Name: </b> {{users.nameE}}</p>
+                        <p><b>Email: </b> {{users.type}}</p>
+                        <p><b>Password: </b> {{users.password}}</p>
+                        {%endfor%}
+                        <a href="/logout" class="btn btn-success">logout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+{%endblock%}

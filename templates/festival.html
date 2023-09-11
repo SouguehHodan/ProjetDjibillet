@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{%block content%}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--partie principale-->
+    <section class="cosp_1">
+        <img src="../static/img/G.jpg" class="img-fluid" id="imgcs" alt="">
+        <div class="position-absolute top-50 end-50 text-light ps-5 pt-5 text-center">
+            <p>
+                Préparez-vous à vivre des moments inoubliables au coeur
+                d'un festival sensationnel ! Rejoignez-nous pour une
+                expérience musicale, artistique et culturelle exceptionnelle.
+                Réservez dès maintenant votre billet et préparez-vous à
+                plonger dans une atmosphère enivrante de spectacles,
+                d'animations et de découvertes qui combleront tous vos
+                sens.
+            </p>
+        </div>
+    </section>
+
+    <ul class="nav justify-content-center bg-body-tertiary mt-5 p-3 mb-2 bg-success-subtle text-emphasis-success">
+      <li class="nav-item">
+        <a class="nav-link active text-success fw-bold" aria-current="page" href="/consert&spectacle">Concert & Spectacle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-success fw-bold" href="/Sport">Sport</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-success fw-bold" href="/Conpherence">Conphérence</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-success fw-bold" href="/Theatre">Theatre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-success fw-bold" href="/Festival">Festival</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-success fw-bold" href="/Anime">Animé</a>
+      </li>
+      <li class="nav-item text-success fw-bold">
+        <a href="/App_Event" class="btn btn-success mx-5" role="button">Add Events</a>
+      </li>
+    </ul>
+    
+    <script src="../static/script.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+     <div class="container">
+            <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5">
+                <h1 class="gallery-title">Festival</h1>
+            </div>
+    
+            <div class="text-center">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="canne">CANNE</button>
+                <button class="btn btn-default filter-button" data-filter="musical">MUSICAL</button>
+            </div>
+            <br/>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter canne">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/A.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Festival de canne</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="#" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter musical">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/B.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Festival musical</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="#" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter canne">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/H.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Festival de canne</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="#" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter musical">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/D.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Festival musical</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="#" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter canne">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/E.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Festival de canne</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="#" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter musical">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/F.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Festival musical</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="#" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+{%endblock%}

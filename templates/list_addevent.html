@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+{% for event in events: %}
+
+    <p>{{event.dates}} - {{event.type}} <a href=#>delete</a> <a href=#>update</a></p>
+
+{%endfor%}
+
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Name :</th>
+        <th>Type :</th>
+        <th>Dates :</th>
+        <th>Adress :</th>
+        <th>Prix :</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for event in events %}
+      <tr>
+        <td>{{event.nameE}}</td>
+        <td>{{event.type}}</td>
+        <td>{{event.dates}}</td>
+        <td>{{event.adress}}</td>
+        <td>{{event.prix}}</td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+
+{%endblock%}

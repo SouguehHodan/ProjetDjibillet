@@ -1,0 +1,479 @@
+{% extends 'base.html' %}
+
+{%block content%}
+    <!--partie principale-->
+    <main>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000" id="A1">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="text-light fw-bold">Plus facile , plus puissant et moins cher</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" id="A2">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="text-light fw-bold">Plus facile , plus puissant et moins cher</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="A3">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="text-light fw-bold">Plus facile , plus puissant et moins cher</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden" id="Sp">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden" id="Sp">Next</span>
+            </button>
+        </div>
+
+        <ul class="nav justify-content-center bg-body-tertiary mt-5 p-3 mb-2 bg-success-subtle text-emphasis-success">
+          <li class="nav-item">
+            <a class="nav-link active text-success fw-bold" aria-current="page" href="/consert&spectacle">Concert & Spectacle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-bold" href="/Sport">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-bold" href="/Conpherence">Conphérence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-bold" href="/Theatre">Theatre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-bold" href="/Festival">Festival</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-bold" href="/Anime">Animé</a>
+          </li>
+          <li class="nav-item text-success fw-bold">
+            <a href="/App_Event" class="btn btn-success mx-5" role="button">Add Events</a>
+          </li>
+        </ul>
+
+        <div class="part-2_1">
+          <h3 class="text-success my-5 mx-5 float-start">Top évennements à venir</h3>
+          <div id="carouselExample2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/D.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top Concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top Spectacle</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top Sport</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top Conpherence</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top Théatre</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top Festival</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top Dessin animé</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+
+        <div class="part-2">
+            <h3 class="text-success my-5 mx-5 float-start">Top évenements</h3>
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cards-wrapper">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/D.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top Concert</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top Spectacle</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top Sport</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top Conpherence</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cards-wrapper">*
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top Théatre</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top Festival</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top Dessin animé</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Top concert</p>
+                      <p>place loureat</p>
+                      <p>le23/11/23 à 20h00</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+
+        <div class="part-3">
+          <h3 class="text-success my-5 mx-5 float-start">Top évenements nationnel</h3>
+          <div id="carouselExample1" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/D.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/C.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/L.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/M.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Top concert</p>
+                    <p>place loureat</p>
+                    <p>le23/11/23 à 20h00</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+
+      <div class="part-4-1">
+        <h3 class="text-success my-5 mx-5 float-start">Top promotion</h3>
+        <div id="carouselExample3" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/D.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/B.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/C.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/L.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/M.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../static/img/I.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Top concert</p>
+                  <p>place loureat</p>
+                  <p>le23/11/23 à 20h00</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+
+      <div class="part-4 bg-dark text-center text-white">
+        <p>choisissez parmi notre sélection d'événements exceptionnels et créez des souvenirs mémorables !</p>
+        <div class="contner">
+          <div class="chld-1">
+            <div class="par1">
+              <a class="icon-link fw-bold text-success" href="/consert&spectacle">
+                Concert & Spectacle
+                <i class="fa-solid fa-arrow-right" style="color: #787d87;"></i>
+              </a>
+            </div>
+            <div class="par1">
+              <a class="icon-link fw-bold text-success" href="/Sport">
+                Sport
+                <i class="fa-solid fa-arrow-right" style="color: #787d87;"></i>
+              </a>
+            </div>
+            <div class="par1">
+              <a class="icon-link fw-bold text-success" href="/Conpherence">
+                Conpherence
+                <i class="fa-solid fa-arrow-right" style="color: #787d87;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="chld-1">
+            <div class="par1">
+              <a class="icon-link fw-bold text-success" href="/Theatre">
+                Théatre
+                <i class="fa-solid fa-arrow-right" style="color: #787d87;"></i>
+              </a>
+            </div>
+            <div class="par1">
+              <a class="icon-link fw-bold text-success" href="/Festival">
+                Festival
+                <i class="fa-solid fa-arrow-right" style="color: #787d87;"></i>
+              </a>
+            </div>
+            <div class="par1">
+              <a class="icon-link fw-bold text-success" href="/Anime">
+                Dessin animé
+                <i class="fa-solid fa-arrow-right" style="color: #787d87;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="part-5">
+        <div class="chld1">
+          <h5>Trouver vos billets</h5>
+          <p>Évitez les files d'attente et réservez votre billet en
+            ligne dès maintenant pour profiter d'un accès
+            rapide et facile à l'événement de votre choix. Ne
+            manquez pas cette opportunité, réservez dès
+            aujourd'hui !</p>
+        </div>
+        <div class="chld2">
+          <h5>Faitez-vous livre partout</h5>
+          <p>Pour une réservation rapide, pratique et sécurisée, réservez dès
+            maintenant vos billets. Profitez de notre plateforme conviviale et
+            réservez en quelques clics pour garantir votre place à
+            l'événement de votre choix. Ne tardez pas,</p>
+        </div>
+      </div>
+    </main>
+{%endblock%}

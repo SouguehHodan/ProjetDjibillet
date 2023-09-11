@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+
+{%block content%}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--partie principale-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000" id="A1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">First slide label</h5>
+              <p class="text-light">
+                Êtes-vous prêt à vivre une soirée mémorable ? 
+                Laissez-vous emporter par l'excitation et la magie de nos concerts 
+                et spectacles époustouflants ! Réservez dès maintenant votre bille et préparez-vous à être transporté dans une expérienc Previous
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000" id="A2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Second slide label</h5>
+              <p class="text-light">
+                Êtes-vous prêt à vivre une soirée mémorable ? 
+                Laissez-vous emporter par l'excitation et la magie de nos concerts 
+                et spectacles époustouflants ! Réservez dès maintenant votre bille et préparez-vous à être transporté dans une expérienc Previous
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden" id="Sp">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden" id="Sp">Next</span>
+        </button>
+    </div>
+
+    <ul class="nav justify-content-center bg-body-tertiary mt-5 p-3 mb-2 bg-success-subtle text-emphasis-success">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/consert&spectacle">Concert&Spectacle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/Sport">Sport</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/Conpherence">Conphérence</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/Theatre">Theatre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/Festival">Festival</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/Anime">Animé</a>
+      </li>
+      <li class="nav-item">
+        <a href="/App_Event" class="btn btn-success mx-5" role="button">Add Events</a>
+      </li>
+    </ul>
+
+    
+    <script src="../static/script.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+     <div class="container">
+            <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5">
+                <h1 class="gallery-title">Concert</h1>
+            </div>
+    
+            <div class="text-center">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="tiji">TIJI</button>
+                <button class="btn btn-default filter-button" data-filter="biwi">BIWI</button>
+                <button class="btn btn-default filter-button" data-filter="robo">ROBOTIQUE</button>
+            </div>
+            <br/>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tiji">
+                  <div class="card" style="width: 18rem;" id="cardeve">
+                    <img src="../static/img/A.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter biwi">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/B.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tiji">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/H.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter robo">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/D.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter biwi">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/E.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter robo">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/F.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5">
+                <h1 class="gallery-title">Spectacle</h1>
+            </div>
+    
+            <div class="text-center">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="tiji">TIJI</button>
+                <button class="btn btn-default filter-button" data-filter="biwi">BIWI</button>
+                <button class="btn btn-default filter-button" data-filter="robo">ROBOTIQUE</button>
+            </div>
+            <br/>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tiji">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/A.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime tiji</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter biwi">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/B.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter tiji">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/H.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime tiji</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter robo">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/D.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime robotique</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter biwi">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/E.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime biwi</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter robo">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../static/img/F.jpg" class="card-img-top" width="40%" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anime robotique</h5>
+                      <p class="fs-6">Au palais le 21/22/20011 à 12h45</p>
+                      <a href="/Panier" class="btn btn-success">Reserve</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+{%endblock%}
